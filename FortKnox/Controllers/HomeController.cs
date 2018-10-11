@@ -10,8 +10,7 @@ namespace FortKnox.Controllers
     {
         public ActionResult Index()
         {
-            kldfdfjkjkf;
-            return View();
+             return View();
         }
 
         public ActionResult About()

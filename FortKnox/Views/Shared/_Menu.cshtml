@@ -1,0 +1,48 @@
+﻿
+@using FortKnox.App_Start;
+
+<style>
+	.navbar-nav .Separator {
+		font-size: 14px;
+		font-weight: bold;
+		color: lightgray;
+	}
+</style>
+
+<div>
+	@{
+		FNMenuModel model = ViewData["HeaderModel"] as FNMenuModel;
+	}
+</div>
+
+<ul class="nav navbar-nav nav-pills">
+
+	<li class="active">
+		@Html.ActionLink("Inicio FortKnox", "Index", "Home", new { area = "" })
+	</li>
+
+	<li class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li>
+				@Html.ActionLink("Batman", "About", "Home")
+			</li>
+			<li>
+				@Html.ActionLink("Contactzzz", "Contact", "Home")
+
+			<li>
+				<a class="dropdown-toggle" id="id1" role="button" data-toggle="dropdown"> Procesos<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li>
+						@Html.ActionLink("Homes2222", "Index", "Home")
+					</li>
+
+				</ul>
+			</li>
+
+		</ul>
+	</li>
+
+</ul>
+
+
+
