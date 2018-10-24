@@ -15,7 +15,7 @@ namespace FortKnox.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "This mesage was pass with  ViewBag.Message";
 
             return View();
         }
