@@ -16,8 +16,17 @@ namespace FortKnox
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "FortKnox.Controllers" }
             );
+
+            routes.MapRoute(
+               name: "Area_Default",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Area", action = "Index", id = UrlParameter.Optional }
+               //namespaces: new string[] { "FortKnox.Areas.Procesos.Controllers" }
+           );
+
         }
     }
 }

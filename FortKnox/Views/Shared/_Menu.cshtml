@@ -18,22 +18,23 @@
 <ul class="nav navbar-nav nav-pills">
 
 	<li class="active">
-		@Html.ActionLink("Inicio FortKnox", "Index", "Home", new { area = "" })
+		@Html.ActionLink("Inicio FortKnox", "Index", "Home", new { area = "" }, null)
 	</li>
 
 	<li class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
 			<li>
-				@Html.ActionLink("Superman", "About", "Home")
+				@Html.ActionLink("Superman", "About", "Home", new { area = "" }, null)
 			</li>
 			<li>
-				@Html.ActionLink("Contactzzz", "Contact", "Home")
+				@Html.ActionLink("Contactzzz", "Contact", "Home", new { area = "" }, null)
 
 			<li>
 				<a class="dropdown-toggle" id="id1" role="button" data-toggle="dropdown"> Procesos<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li>
-						@Html.ActionLink("Homes2222", "Index", "Home")
+						@*@Html.ActionLink("Areas", "Index", "Home")*@
+						@Html.ActionLink("Areas", "Index", "Area", new { area = "procesos" }, null)
 					</li>
 
 				</ul>
